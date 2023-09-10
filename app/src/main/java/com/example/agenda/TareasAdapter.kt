@@ -6,7 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class TareasAdapter(private val listTareas: List<Tarea>): RecyclerView.Adapter<TareasViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TareasViewHolder {
-        //val view = LayoutInflater.fom
+
+        return TODO("Provide the return value")
     }
 
     override fun getItemCount(): Int {
