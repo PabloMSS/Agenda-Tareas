@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background_agenda_app"
-    tools:context=".agendaActivity">
+    tools:context=".AgendaActivity">
 
     <TextView
         android:layout_width="wrap_content"
