@@ -3,4 +3,8 @@
     <string name="agenda_title">Bienvenido, Pablo</string>
     <string name="agenda_categorias">Categorias</string>
     <string name="agenda_tareas">Tareas</string>
+    <string name="agenda_dialogo_hint">Añade la tarea</string>
+    <string name="agenda_business">Negocios</string>
+    <string name="agenda_personal">Personal</string>
+    <string name="agenda_other">Otros</string>
 </resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background_agenda_app">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDialog"
+        android:layout_margin="8dp"
+        android:hint="@string/agenda_dialogo_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/rgCategories">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBusiness"
+            android:text="@string/agenda_business"
+            android:textColor="@color/white"
+            android:checked="true"
+            android:buttonTint="@color/agenda_business_category"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbPersonal"
+            android:text="@string/agenda_personal"
+            android:textColor="@color/white"
+            android:buttonTint="@color/agenda_personal_category"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbOther"
+            android:text="@string/agenda_other"
+            android:textColor="@color/white"
+            android:buttonTint="@color/agenda_other_category"/>
+    </RadioGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,49 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/background_agenda_app"
-    tools:context=".AgendaActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:text="@string/agenda_title"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textAllCaps="true"
-        android:layout_marginVertical="44dp"
-        android:layout_marginHorizontal="32dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/agenda_categorias"
-        style="@style/AgendaSubtitle" />
-
-    <androidx.recyclerview.widget.RecyclerView
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/rvCategories"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_agenda_app"
+        tools:context=".AgendaActivity">
 
-    <TextView
-        style="@style/AgendaSubtitle"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="@string/agenda_title"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:layout_marginVertical="44dp"
+            android:layout_marginHorizontal="32dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agenda_categorias"
+            style="@style/AgendaSubtitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvCategories"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            style="@style/AgendaSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agenda_tareas"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvTareas"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="32dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/agenda_tareas"
-        android:layout_marginTop="16dp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/rvTareas"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="32dp"/>
-
-</LinearLayout>
+        android:id="@+id/fabAddTareas"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_plus"
+        app:tint="@color/white"
+        app:backgroundTint="@color/agenda_accent"
+        app:fabSize="normal"
+        android:layout_gravity="end|bottom"/>
+</FrameLayout>
