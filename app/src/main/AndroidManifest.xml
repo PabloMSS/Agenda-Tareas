@@ -15,7 +15,8 @@
         <activity
             android:name=".AgendaActivity"
             android:exported="true"
-            android:theme="@style/Theme.Agenda">
+            android:theme="@style/Theme.Agenda"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

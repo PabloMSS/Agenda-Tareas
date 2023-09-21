@@ -7,4 +7,5 @@
     <string name="agenda_business">Negocios</string>
     <string name="agenda_personal">Personal</string>
     <string name="agenda_other">Otros</string>
+    <string name="text_btn_dialog">Crear Tarea</string>
 </resources>
