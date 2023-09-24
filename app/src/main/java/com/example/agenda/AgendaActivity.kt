@@ -117,8 +117,8 @@ class AgendaActivity : AppCompatActivity() {
 
     fun onItemSelected(position: Int) {
         listTareas[position].isSelected = !listTareas[position].isSelected
-        listTareas.remove(listTareas.get(position))
-        tareasAdapter.notifyItemRemoved(position);
+        listTareas.remove(listTareas[position])
+        updatedAdapter()
     }
 
     fun updateCategories(position: Int) {

@@ -1,5 +1,6 @@
 package com.example.agenda
 
+import android.annotation.SuppressLint
 import android.os.Handler
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -16,6 +17,7 @@ class TareasAdapter(var listTareas: List<Tarea>, private val onTaskSelected: (In
         return listTareas.size
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onBindViewHolder(holder: TareasViewHolder, position: Int) {
         holder.render(listTareas[position])
         holder.itemView.findViewById<CheckBox>(R.id.cbTarea).setOnClickListener {
